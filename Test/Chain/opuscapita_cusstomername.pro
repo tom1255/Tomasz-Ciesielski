@@ -61,8 +61,10 @@ i_line_rule( check_text_id_line, [ or( [
 	, [ check_text( `SE556001715301` ), set( chain, `StockholmsStadsParkeringsAB_AdvokatfirmanCederquistKB` ), trace( [ `Stockholms Stads Parkering Aktiebolag` ] ) ]
 	
 	, [ check_text( `SE556814695401` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
-	
-	
+	, [ check_text( `test1` ), set( chain, `bla` ), trace( [ `bla` ] ) ]
+	, [ check_text( `test2` ), set( chain, `blabla` ), trace( [ `blabla` ] ) ]
+	, [ check_text( `test3` ), set( chain, `blablabla` ), trace( [ `blablabla` ] ) ]
+
 	% , [ check_text( `` ), set( chain, `` ), trace( [ `` ] ) ]
 
 ] ) ] ).
