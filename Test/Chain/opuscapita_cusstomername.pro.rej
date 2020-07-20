@@ -1,0 +1,30 @@
+diff a/Test/Chain/opuscapita_cusstomername.pro b/Test/Chain/opuscapita_cusstomername.pro	(rejected hunks)
+@@ -66,12 +66,28 @@
+ 	
+ 	, [ check_text( `SE556814695401` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
+ 	
++<<<<<<< HEAD
+ 	, [ check_text( `` ), set( chain, `` ), trace( [ `` ] ) ]
+ 
+ 	, [ check_text( `testing` ), set( chain, `` ), trace( [ `` ] ) ]
+ 
+ 	,[ check_text( `test` ), set( chain, `` ), trace( [ `` ] ) ]
++=======
++<<<<<<< HEAD
++	, [ check_text( `123` ), set( chain, `coa` ), trace( [ `dsa dsa AB` ] ) ]
++
++	, [ check_text( `456` ), set( chain, `aS` ), trace( [ `dsa Commitment AB` ] ) ]
++
++	, [ check_text( `test` ), set( chain, `s` ), trace( [ `dsad Commitment AB` ] ) ]
++
++=======
++	, [ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
++
++	,[ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
++>>>>>>> 4cf6cca28ff74ae60dda20f3c72554648be2b682
++>>>>>>> 96c86a2983fbad6e382fd2604c8f1497c8320622
+ 	
++	, [ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
+ 	% , [ check_text( `` ), set( chain, `` ), trace( [ `` ] ) ]
+ 
+ ] ) ] ).
