@@ -40,6 +40,10 @@ i_line_rule( check_text_id_line, [ or( [
 
 	[ check_text( `DataItemName(exactlyasitappearsonSDD)` ), set( chain, `generic test template test` ), trace( [ `GENERIC TEST TEMPLATE TEST` ] ) ]
 
+
+
+
+
 	, [ check_text( `SE556307560401` ), set( chain, `KontorskraftAB_AdvokatfirmanCederquistKB` ), trace( [ `Kontorskraft AB` ] ) ]
 
 	, [ check_text( `559160-7808` ), set( chain, `LoxodontaStockholmAB_AdvokatfirmanCederquistKB` ), trace( [ `Loxodonta Stockholm AB` ] ) ]
@@ -61,7 +65,24 @@ i_line_rule( check_text_id_line, [ or( [
 	, [ check_text( `SE556001715301` ), set( chain, `StockholmsStadsParkeringsAB_AdvokatfirmanCederquistKB` ), trace( [ `Stockholms Stads Parkering Aktiebolag` ] ) ]
 	
 	, [ check_text( `SE556814695401` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
-	
+
+	, [ check_text( `test1` ), set( chain, `bla` ), trace( [ `bla1111` ] ) ]
+	, [ check_text( `test2` ), set( chain, `blabla` ), trace( [ `blabla` ] ) ]
+	, [ check_text( `test3` ), set( chain, `blablabla` ), trace( [ `blabla111222333333311bla` ] ) ]
+
+	, [ check_text( `hkdskdkj` ), set( chain, `test1` ), trace( [ `teeeest1` ] ) ]
+
+	, [ check_text( `owoieoi` ), set( chain, `test2` ), trace( [ `test2` ] ) ]
+
+	, [ check_text( `SE556814mxznnx5401` ), set( chain, `test434` ), trace( [ `test3` ] ) ]
+=======lkllklk
+=======
+	, [ check_text( `test` ), set( chain, `test` ), trace( [ `Teleoffice Commitment AB` ] ) ]
+=======
+<<<<<<< HEAD
+>>>>>>> 11973ae997b51e98d02da56e5787da98a8ddbe0f
+=======
+>>>>>>> 7db1ce9672c7f3987ffd58483066f273d016b488
 	, [ check_text( `123` ), set( chain, `coa` ), trace( [ `dsa dsa AB` ] ) ]
 
 	, [ check_text( `456` ), set( chain, `aS` ), trace( [ `dsa Commitment AB` ] ) ]
@@ -73,15 +94,19 @@ i_line_rule( check_text_id_line, [ or( [
 	, [ check_text( `test` ), set( chain, `` ), trace( [ `` ] ) ]
 
 	, [ check_text( `test` ), set( chain, `s` ), trace( [ `dsad Commitment AB` ] ) ]
-
-	, [ check_text( `` ), set( chain, `` ), trace( [ `` ] ) ]
-
+>>>>>>> 96c86a2983fbad6e382fd2604c8f1497c8320622
 
 	, [ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
 	
 	,[ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) 
 	
-	, [ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
+	, [ check_text( `test` ), set( chain, `TeleofficeCommaaaaaitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
+<<<<<<< HEAD
+>>>>>>> 4cf6cca28ff74ae60dda20f3c72554648be2b682
+=======
+>>>>>>> 96c86a2983fbad6e382fd2604c8f1497c8320622
+>>>>>>> f3892bee51fc2b4e66096a879ddad0a3265d514e
+>>>>>>> 11973ae997b51e98d02da56e5787da98a8ddbe0f
 	% , [ check_text( `` ), set( chain, `` ), trace( [ `` ] ) ]
 
- ] ).
+] ) ] ).
