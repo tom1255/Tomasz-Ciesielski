@@ -96,7 +96,7 @@ i_line_rule( check_text_id_line, [ or( [
 	, [ check_text( `test` ), set( chain, `s` ), trace( [ `dsad Commitment AB` ] ) ]
 >>>>>>> 96c86a2983fbad6e382fd2604c8f1497c8320622
 
-	, [ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
+	, [ check_text( `test` ), set( chain, `TeleofficeCommitmentAfffB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) ]
 	
 	,[ check_text( `test` ), set( chain, `TeleofficeCommitmentAB_AdvokatfirmanCederquistKB` ), trace( [ `Teleoffice Commitment AB` ] ) 
 	
