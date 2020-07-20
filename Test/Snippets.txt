@@ -1,0 +1,121 @@
+    "coffee": {
+    "prefix": "cofee",
+    "body": [ 
+        "Zapraszam na kawusie :D"
+        "kto chętny???"                
+    ],
+    "description": "Invite to go to the kitchen"
+    },
+
+    "nearest": { "prefix": "nearest", "body": "nearest(${1:Position},${2:Left},${3:Right})" },
+
+	"whereami": { "prefix": "whereami", "body": "whereami(_,_,${1:X})" },
+
+	"read_ahead": { "prefix": "read_ahead", "body": "read_ahead([${1:Anchor Text}])" },
+	
+	"funt": { "prefix": "funt", "body": "£" },
+
+	"dolar": { "prefix": "dolar", "body": "$" },
+	
+	"euro": { "prefix": "euro", "body": "€" },
+
+
+	"template_new": {
+        "prefix": "template_new",
+        "body": [
+            "i_version( ${1:lowercase_rules_name}, `$CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND` ).\n",
+            "i_trace_rule_captures.",
+ 
+            "",
+ 
+            "% INVOICE NUMBER",
+ 
+            "run rul line_with_text(`${2:invoice_number}`)",
+ 
+            "\t, in , `${3:Anchor Text}` , invoice_number(s1) , ${4:Anchor Text}.",
+ 
+            "",
+ 
+            "% INVOICE DATE",
+ 
+            "run rul line_with_text(`${5:invoice_date}`)",
+ 
+            "\t, in , `${6:Anchor Text}` , invoice_date(date) , ${7:Anchor Text}.",
+ 
+            "",
+ 
+            "% ORDER NUMBER",
+ 
+            "run rul line_with_text(`${8:order_number}`)",
+ 
+            "\t, in , `${9:Anchor Text}` , order_number(s1) , ${10:Anchor Text}.",
+ 
+            "",
+ 
+            "% SUPPLIER VAT NUMBER",
+ 
+            "run rul line_with_text(`${11:supplier_vat_number}`)",
+ 
+            "\t, in , `${12:Anchor Text}` , supplier_vat_number(s1) , ${13:Anchor Text}.",
+ 
+            "",
+            
+            "% TOTAL NET",
+ 
+            "run rul line_with_text(`${12:total_net}`)",
+ 
+            "\t, in , `${13:Anchor Text}` , total_net(d) , ${14:Anchor Text}.",
+ 
+            "",
+            
+            "% TOTAL VAT",
+ 
+            "run rul line_with_text(`${15:total_vat}`)",
+ 
+            "\t, in , `${16:Anchor Text}` , total_vat(d) , ${17:Anchor Text}.",
+ 
+            "",
+            
+            "% TOTAL INVOICE",
+ 
+            "run rul line_with_text(`${18:total_invoice}`)",
+ 
+            "\t, in , `${19:Anchor Text}` , total_invoice(d) , ${20:Anchor Text}.",
+ 
+            "",
+            
+            
+ 
+            "",
+            "% Line section",
+            "",
+            "",
+            "% i_section",
+            "",
+ 
+            "run section line_header_line,",
+            "\t\tqn0( [ peek_fails(line_end_line)" ,
+            "\t\t, or([\n",
+            "\t\t\t[ line_invoice_line_line ]\n",
+            "\t\t\t, [ line ]\n",
+            "\t\t\t])",
+            "\t\t] ).",
+            "",
+            "% line_header_line",
+            "",
+            "line_header_line line_rul",
+            "\t\t`${21:header line text}`.\n",
+            "",
+            "% line_end_line",
+            "",
+            "line_end_line line_rul",
+            "\t\t`${22:end rule text}`.\n",
+            "",
+            "% line_invoice_line",
+            "",
+            "line_invoice_line_line line_rul",
+            "\t\t`${23:end rule text}`.\n"
+ 
+        ],
+        "description": "A basic template for document capture."
+    },
